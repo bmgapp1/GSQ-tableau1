@@ -16,11 +16,14 @@ if (!isset($_SESSION['loggedin'])) {
  $HeureDeSubdivisionJournaliere42=13;
  $HeureDeSubdivisionJournaliere43=20;
  $HeureDeSubdivisionJournaliere44=24;
-
+/*$DATABASE_HOST = 'remotemysql.com';
+$DATABASE_USER = 'QeU06kz7zq';
+$DATABASE_PASS = 'TDIrQnWETs';
+$DATABASE_NAME = 'QeU06kz7zq';*/
  try
 {
 // On se connecte à MySQL
-$bdd = new PDO('mysql:host=localhost;dbname=ssm2;charset=utf8', 'BAMOGO', 'bamogo');
+$bdd = new PDO('mysql:host=remotemysql.com;dbname=QeU06kz7zq;charset=utf8', 'QeU06kz7zq', 'TDIrQnWETs');
 }
 catch(Exception $e)
 {
